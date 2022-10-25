@@ -43,6 +43,10 @@
             <button class="btn">get started</button>
         </div>
     </header>
+    
+    <!--  Go to Top Button    -->
+    <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+    
     <!-- Start About -->
     <section class="about" id="about">
         <div class="row">
@@ -428,6 +432,33 @@
         src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB7yslD-BLgdvkCtW5a27xfxwhJRp6Adv4&callback=initMap">
         </script>
     <script src="/script.js"></script>
+        
+        <script>
+      // Got to top
+
+      let mybutton = document.getElementById("myBtn");
+      // When the user scrolls down 20px from the top of the document, show the button
+      window.onscroll = function () {
+        scrollFunction();
+      };
+      function scrollFunction() {
+        if (
+          document.body.scrollTop > 20 ||
+          document.documentElement.scrollTop > 20
+        ) {
+          mybutton.style.display = "block";
+        } else {
+          mybutton.style.display = "none";
+        }
+      }
+      // When the user clicks on the button, scroll to the top of the document
+      function topFunction() {
+        document.body.scrollTop = 0;
+        document.documentElement.scrollTop = 0;
+      }
+    </script>
+
+        
 </body>
 
 </html>
