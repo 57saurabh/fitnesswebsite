@@ -215,6 +215,7 @@ nav .open,.close{
     position: relative;
     overflow: hidden;
     flex-basis: 30%;
+    cursor: pointer;
 }
 .services .container .box img{
     width: 100%;
@@ -234,6 +235,7 @@ nav .open,.close{
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    transition: all ease 0.7s;
 }
 .services .container .box:hover .info{
     transform: translate(-50%, -50%) scale(1);
